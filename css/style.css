@@ -1,0 +1,2016 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#scroll {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    transition: all .5s;
+    background-image: linear-gradient(to right, #1130f0, #6165ce);
+    z-index: 999;
+    display: none;
+    border-radius: 60px;
+}
+
+#scroll i {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    margin-left: -7px;
+    margin-top: -8px;
+}
+
+#scroll:hover {
+    background-image: linear-gradient(to right, #6165ce, #1130f0);
+    opacity: 1;
+}
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background-color: transparent;
+    z-index: 99999;
+    position: sticky;
+    top: 78px;
+}
+
+.progress-bar {
+    height: 8px;
+    background-image: linear-gradient(to right, #1130f0, #6165ce);
+    width: 0%;
+    z-index: 99999;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom, #1130f0, #6165ce);
+    border-radius: 3px;
+    transition: all .5s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(to bottom, #6165ce, #1130f0);
+}
+
+/*header start*/
+
+header .navbar1 {
+    background-color: transparent;
+}
+
+header .scrolled {
+    background-color: white;
+    transition: all .5s;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+header .navbar1 .navbar-toggler {
+    background-color: #5d62cf;
+}
+
+header .scrolled .navbar-brand {
+    color: black;
+}
+
+header .scrolled .navbar-brand:hover {
+    color: black;
+}
+
+header .navbar .navbar-brand {
+    font-size: 35px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+header .navbar .collapse .navbar-nav .nav-item .nav-link {
+    font-size: 19.61px;
+    text-decoration: none;
+    color: white;
+    transition: all .5s;
+}
+
+header .scrolled .collapse .navbar-nav .nav-item .nav-link {
+    color: black;
+}
+
+header .navbar .free_concultancy_btn {
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    transition: all .5s;
+}
+
+header .navbar .free_concultancy_btn:hover {
+    background-color: white;
+    color: black;
+}
+
+header .scrolled .free_concultancy_btn {
+    border: 2px solid black;
+    color: black;
+}
+
+header .scrolled .free_concultancy_btn:hover {
+    border: 2px solid black;
+    background-color: black;
+    box-shadow: 8px 8px 7px 3px #6b6b6b5e;
+    color: white;
+}
+
+header .carousel .carousel-inner {
+    background-image: url(../img/banner.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+header .carousel .carousel-inner .content_position {
+    position: relative;
+}
+
+header .carousel .carousel-inner .content_position .carousel-item .first_content .first_text {
+    font-size: 32.4px;
+    color: white;
+}
+
+header .carousel .carousel-inner .content_position .carousel-item .first_content .second_text {
+    font-size: 86.73px;
+    font-weight: 800;
+    color: white;
+}
+
+header .carousel .carousel-inner .content_position .carousel-item .first_content .third_text {
+    font-size: 27px;
+    color: white;
+}
+
+header .carousel .carousel-inner .content_position .carousel-item .first_content .learn_more_btn {
+    background-image: linear-gradient(to right, #1130f0, #6165ce);
+    color: white;
+    border: 1px solid transparent;
+    transition: all .5s ease-in-out;
+}
+
+header .carousel .carousel-inner .content_position .carousel-item .first_content .learn_more_btn:hover {
+    background-image: linear-gradient(to right, #6165ce, #1130f0);
+    border: 1px solid transparent;
+}
+
+header .carousel .carousel-inner .content_position .carousel-item .first_content .get_in_touch_btn {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: all .5s;
+}
+
+header .carousel .carousel-inner .content_position .carousel-item .first_content .get_in_touch_btn:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+}
+
+header .carousel .carousel-inner .content_position .service_background {
+    position: absolute;
+    background-color: #00000066;
+    bottom: 0;
+}
+
+header .carousel .carousel-inner .content_position .service_background a {
+    color: white;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+header .carousel .carousel-inner .content_position .service_background a:hover {
+    color: #cbcbff;
+}
+
+header .carousel .carousel-indicators {
+    position: absolute;
+    bottom: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4%;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+header .carousel .carousel-indicators li {
+    text-align: center;
+    height: auto;
+    cursor: pointer;
+    text-indent: 0px;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    background-color: #fff;
+    transition: opacity .6s ease;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+header .carousel .carousel-indicators .active {
+    opacity: 1;
+    transform: scale(1.2);
+    border-radius: 5px;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+/*header end*/
+
+/*about us section start*/
+
+.aboutus_section .aboutus_side1 .main_title {
+    font-size: 80px;
+    color: #e5e5e5;
+    font-weight: 800;
+}
+
+.aboutus_section .aboutus_side1 .sub_title {
+    font-size: 46.32px;
+    color: black;
+    font-weight: 800;
+    line-height: 60px;
+}
+
+.aboutus_section .aboutus_side1 .introduction {
+    font-size: 25px;
+    color: #616161;
+}
+
+.aboutus_section .aboutus_side1 .description {
+    font-size: 17px;
+    color: #616161;
+}
+
+.aboutus_section .aboutus_side1 .about_btn {
+    height: 44px;
+    width: 149px;
+    background-image: linear-gradient(to right, #1130f0, #6165ce);
+    color: white;
+    border: 1px solid transparent;
+    transition: all .5s;
+}
+
+.aboutus_section .aboutus_side1 .about_btn:hover {
+    background-image: linear-gradient(to right, #6165ce, #1130f0);
+    box-shadow: 12px 12px 7px 3px #6b6b6b5e;
+}
+
+.aboutus_section .aboutus_side2 .icon_box {
+    height: 230px;
+    background-color: #f8f8f8;
+    box-shadow: 4px 4px 7px 3px #b9b9b966;
+    transition: all .5s;
+}
+
+.aboutus_section .aboutus_side2 .icon_box:hover {
+    box-shadow: 16px 16px 7px 3px #b9b9b966;
+}
+
+.aboutus_section .aboutus_side2 .icon_box i {
+    color: black;
+    font-size: 50px;
+}
+
+.aboutus_section .aboutus_side2 .icon_box h5 {
+    font-size: 14.68px;
+    color: #616161;
+}
+
+/*about us section end*/
+
+/*information section start*/
+
+.information_section {
+    background-color: #f8f8f8;
+}
+
+.information_section .main_box {
+    transition: all .5s;
+}
+
+.information_section .main_box:hover {
+    box-shadow: 0px 0px 10px 0px #a9a9a9c9;
+    border-radius: 10px;
+}
+
+.information_section .main_box .number {
+    color: #0c5adb;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.information_section .main_box hr {
+    border-top: 3px solid #0c5adb;
+}
+
+.information_section .main_box .content h4 {
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+}
+
+.information_section .main_box .content p {
+    font-size: 13px;
+    color: #616161;
+}
+
+.information_section .main_box .content a {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.information_section .main_box .content a:hover {
+    color: #0c5adb;
+}
+
+/*information section end*/
+
+/*product section start*/
+
+.product_section h3 {
+    color: #e5e5e5;
+    font-size: 80px;
+    font-weight: 800;
+}
+
+.product_section .product_section_side1 {
+    position: relative;
+}
+
+.product_section .product_section_side1 .image1 {
+    position: absolute;
+    top: -70px;
+    left: 0px;
+}
+
+.product_section .product_section_side1 .image2 {
+    position: absolute;
+    top: 55px;
+    left: 140px;
+}
+
+.product_section .product_section_side2 .product_title {
+    font-size: 40px;
+    color: black;
+    font-weight: 800;
+}
+
+.product_section .product_section_side2 .product_description {
+    font-size: 18px;
+    color: #616161;
+}
+
+.product_section .product_section_side2 .products i {
+    color: #0c5adb;
+    font-size: 24px;
+}
+
+.product_section .product_section_side2 .products span {
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.product_section .product_section_side2 .products p {
+    color: #616161;
+    font-size: 18px;
+}
+
+/*product section end*/
+
+/*company logo section start*/
+
+.company_logo_section {
+    background-color: #f8f8f8;
+}
+
+.company_logo_section .images {
+    height: 150px;
+}
+
+.company_logo_section .images img {
+    height: 35px;
+}
+
+/*company logo section end*/
+
+/*skill section start*/
+
+.skill_section .side1 h3 {
+    font-size: 80px;
+    font-weight: 800;
+    color: #e5e5e5;
+}
+
+.skill_section .side1 span {
+    font-size: 41.25px;
+    font-weight: 800;
+    color: black;
+}
+
+.skill_section .side1 p {
+    color: #616161;
+    font-size: 18px;
+}
+
+.skill_section .side1 .progress_bar .progress {
+    height: 10px;
+    border-radius: 0;
+}
+
+.skill_section .side1 .progress_bar .progress .progress-bar {
+    background-color: #0c5adb;
+}
+
+.skill_section .side2 img {
+    filter: drop-shadow(1px 1px 3px #616161);
+}
+
+.skill_section .counter_background {
+    background-color: #f8f8f8;
+}
+
+.skill_section .counter_background .Count .count_number {
+    font-size: 35px;
+    font-weight: 800;
+    color: black;
+}
+
+.skill_section .counter_background .counter_title {
+    font-size: 25px;
+    color: black;
+}
+
+/*skill section end*/
+
+/*project section start*/
+
+.project_section h2 {
+    font-size: 70px;
+    font-weight: 800;
+    opacity: 0.9;
+    color: #e5e5e5;
+    position: relative;
+}
+
+.project_section h2 .project_heading {
+    font-weight: 800;
+    color: #000;
+    font-size: 33px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+}
+
+.project_section .project_main_text {
+    color: #616161;
+    font-size: 18px;
+}
+
+.project_section .owl-carousel {
+    overflow: hidden;
+    position: relative;
+}
+
+.project_section .owl-carousel .owl-controls {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+}
+
+.project_section .owl-carousel .owl-controls .owl-nav {
+    position: relative;
+}
+
+.project_section .owl-carousel .owl-controls .owl-nav .owl-prev:hover {
+    background-color: #616161;
+}
+
+.project_section .owl-carousel .owl-controls .owl-nav .owl-prev {
+    position: absolute;
+    top: 0%;
+    right: 21.7%;
+    height: 45px;
+    width: 45px;
+    transform: rotate(45deg);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+}
+
+.project_section .owl-carousel .owl-controls .owl-nav .owl-prev i {
+    transform: rotate(134deg);
+}
+
+.project_section .owl-carousel .owl-controls .owl-nav .owl-next {
+    position: absolute;
+    top: 0%;
+    left: 21.7%;
+    height: 45px;
+    width: 45px;
+    transform: rotate(45deg);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+}
+
+.project_section .owl-carousel .owl-controls .owl-nav .owl-next:hover {
+    background-color: #616161;
+}
+
+.project_section .owl-carousel .owl-controls .owl-nav .owl-next i {
+    transform: rotate(134deg);
+}
+
+.project_section .owl-carousel .owl-controls .owl-dots {
+    display: none !important;
+}
+
+.project_section .owl-carousel .owl-item.center > div:after {
+    content: '';
+}
+
+.project_section .owl-carousel .owl-item > div:after {
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.project_section .owl-carousel .item {
+    opacity: 0.4;
+    transition: .4s ease all;
+    margin: 0 20px;
+    transform: scale(0.8);
+}
+
+.project_section .owl-carousel .active .item {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/*project section end*/
+
+/*team section strat*/
+
+.team_section .team_titles {
+    position: relative;
+}
+
+.team_section .team_titles h4 {
+    font-size: 80px;
+    color: #e5e5e5;
+    font-weight: 800;
+}
+
+.team_section .team_titles span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    color: black;
+    font-weight: 600;
+}
+
+.team_section .team_main_box .image_bg {
+    border-radius: 50%;
+    height: 195px;
+    width: 195px;
+    box-shadow: inset 0px 8px 6px 0px #9696967d;
+    position: relative;
+}
+
+.team_section .team_main_box .image_bg img {
+    border-radius: 50%;
+    height: 150px;
+    transition: all .5s;
+}
+
+.team_section .team_main_box .image_bg img:hover {
+    height: 160px;
+}
+
+.team_section .team_main_box .image_bg .team_icons .icon1 {
+    position: absolute;
+    top: 18%;
+    left: 72%;
+    background-image: linear-gradient(to right, #1130f0, #6165ce);
+    color: white;
+    box-shadow: 0px 0px 7px 2px #4653da;
+    border-radius: 50%;
+    height: 23px;
+    font-size: 15px;
+    width: 23px;
+    transition: all .5s;
+}
+
+.team_section .team_main_box .image_bg .team_icons .icon1:hover {
+    background-image: linear-gradient(to right, #6165ce, #1130f0);
+}
+
+.team_section .team_main_box .image_bg .team_icons .icon2 {
+    position: absolute;
+    top: 34%;
+    left: 80%;
+    background-image: linear-gradient(to right, #1130f0, #6165ce);
+    color: white;
+    box-shadow: 0px 0px 7px 2px #4653da;
+    border-radius: 50%;
+    height: 23px;
+    font-size: 15px;
+    width: 23px;
+    transition: all .5s;
+}
+
+.team_section .team_main_box .image_bg .team_icons .icon2:hover {
+    background-image: linear-gradient(to right, #6165ce, #1130f0);
+}
+
+.team_section .team_main_box .image_bg .team_icons .icon3 {
+    position: absolute;
+    top: 52%;
+    left: 82%;
+    background-image: linear-gradient(to right, #1130f0, #6165ce);
+    color: white;
+    box-shadow: 0px 0px 7px 2px #4653da;
+    border-radius: 50%;
+    height: 23px;
+    font-size: 15px;
+    width: 23px;
+    transition: all .5s;
+}
+
+.team_section .team_main_box .image_bg .team_icons .icon3:hover {
+    background-image: linear-gradient(to right, #6165ce, #1130f0);
+}
+
+.team_section .team_main_box h4 {
+    font-size: 22.81px;
+    color: #1633ec;
+}
+
+.team_section .team_main_box span {
+    font-size: 13.69px;
+    color: #a4a1a1;
+}
+
+/*team section end*/
+
+/*testimonial section start*/
+
+.testimonial_section {
+    padding: 50px 0px;
+    background-color: #f8f8f8;
+}
+
+.testimonial_section h2 {
+    font-weight: 800;
+    opacity: 0.9;
+    color: #e5e5e5;
+    font-size: 50px;
+}
+
+.testimonial_section .testimonial_title {
+    font-size: 37px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.testimonial_section .testimonial_text {
+    font-size: 14px;
+    color: #616161;
+}
+
+.testimonial_section .slick-slide {
+    margin: 0px 20px;
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+.testimonial_section .slick-slide img {
+    width: 34%;
+    display: block;
+}
+
+.testimonial_section .main_box {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.testimonial_section .main_box .polygon_shadow {
+    filter: drop-shadow(2px 4px 6px rgba(32, 33, 36, 0.28));
+}
+
+.testimonial_section .main_box .polygon_shadow p {
+    color: #616161;
+    clip-path: polygon(100% 0, 100% 70%, 10% 70%, 0 84%, 0 0);
+    font-size: 14.29px;
+    padding-bottom: 100px;
+    background-color: white;
+}
+
+.testimonial_section .main_box .testimonial_content {
+    position: absolute;
+    top: 75%;
+    left: 18px;
+}
+
+.testimonial_section .main_box .testimonial_content img {
+    border-radius: 50%;
+}
+
+.testimonial_section .main_box .testimonial_content .client_name {
+    font-size: 20px;
+    color: #1633ec;
+}
+
+.testimonial_section .main_box .testimonial_content .client_designation {
+    font-size: 14px;
+    color: #616161;
+}
+
+.testimonial_section .slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.testimonial_section .slick-slider .slick-track {
+    transform: translate3d(0, 0, 0);
+}
+
+.testimonial_section .slick-slider .slick-list {
+    transform: translate3d(0, 0, 0);
+}
+
+.testimonial_section .slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.testimonial_section .slick-list:focus {
+    outline: none;
+}
+
+.testimonial_section .slick-list.dragging {
+    cursor: pointer;
+}
+
+.testimonial_section .slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.testimonial_section .slick-track:before {
+    display: table;
+    content: '';
+}
+
+.testimonial_section .slick-track:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.testimonial_section .slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.testimonial_section .slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.testimonial_section [dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.testimonial_section .slick-slide.slick-loading img {
+    display: none;
+}
+
+.testimonial_section .slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.testimonial_section .slick-initialized .slick-slide {
+    display: block;
+    outline: 0px !important;
+}
+
+.testimonial_section .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.testimonial_section .slick-arrow.slick-hidden {
+    display: none;
+}
+
+/*testimonial section end*/
+
+/*blog section start*/
+
+.blog_section .blog_titles {
+    position: relative;
+}
+
+.blog_section .blog_titles h4 {
+    font-size: 80px;
+    color: #e5e5e5;
+    font-weight: 800;
+}
+
+.blog_section .blog_titles span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    color: black;
+    font-weight: 600;
+}
+
+.blog_section p {
+    font-size: 18px;
+    color: #616161;
+}
+
+.blog_section .blog_box {
+    box-shadow: 0px 0px 10px 4px #9a9a9a8c;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.blog_section .blog_box:hover {
+    box-shadow: 0px 0px 23px 5px #9a9a9a8c;
+}
+
+.blog_section .blog_box img {
+    border-radius: 10px;
+    height: 200px;
+}
+
+.blog_section .blog_box .blog_author {
+    color: #616161;
+    font-size: 14px;
+}
+
+.blog_section .blog_box h4 {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.blog_section .blog_box .blog_btns .btn1 {
+    font-size: 10px;
+    color: #f94a11;
+    width: 30%;
+    background-color: #fedbcf;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.blog_section .blog_box .blog_btns .btn1:hover {
+    background-color: #f94a11;
+    color: #fedbcf;
+    box-shadow: 8px 8px 7px 3px #b9b9b966;
+}
+
+.blog_section .blog_box .blog_btns .btn2 {
+    font-size: 10px;
+    color: #0cbc5a;
+    width: 30%;
+    background-color: #cef2de;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.blog_section .blog_box .blog_btns .btn2:hover {
+    background-color: #0cbc5a;
+    color: #cef2de;
+    box-shadow: 8px 8px 7px 3px #b9b9b966;
+}
+
+/*blog section end*/
+
+/*footer section start*/
+
+.footer_section {
+    background-color: #2d2d2d;
+    position: relative;
+}
+
+.footer_section .input-group {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    width: 30%;
+    transform: translateX(-50%);
+    filter: drop-shadow(-1px -1px 5px rgba(32, 33, 36, 0.28));
+}
+
+.footer_section .input-group input {
+    border-radius: 25px 0px 0px 25px;
+    border: 0;
+    height: 40px;
+}
+
+.footer_section .input-group input:focus {
+    box-shadow: unset;
+}
+
+.footer_section .input-group .input-group-btn .subscribe_btn {
+    border-radius: 0px 25px 25px 0px;
+    background-image: linear-gradient(to right, #1130f0, #6165ce);
+    color: white;
+    border: 0;
+    height: 40px;
+}
+
+.footer_section .input-group .input-group-btn .subscribe_btn:hover {
+    background-image: linear-gradient(to right, #6165ce, #1130f0);
+}
+
+.footer_section .input-group .input-group-btn .subscribe_btn:focus {
+    box-shadow: unset;
+}
+
+.footer_section .side1 .title_position {
+    height: 50px;
+}
+
+.footer_section .side1 .title_position .title {
+    font-size: 35px;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+}
+
+.footer_section .side1 p {
+    color: #fefeff;
+    font-size: 14px;
+}
+
+.footer_section .side1 .icons a {
+    color: #fefeff;
+    font-size: 20px;
+}
+
+.footer_section .side1 .icons a :hover {
+    color: #cbcbff;
+}
+
+.footer_section .side1 .icons a i {
+    transition: all.5s;
+}
+
+.footer_section .side2 .title_position {
+    height: 50px;
+}
+
+.footer_section .side2 .title_position .title {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.footer_section .side2 .links a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all.5s;
+}
+
+.footer_section .side2 .links a:hover {
+    color: #cbcbff;
+}
+
+.footer_section .side3 .title_position {
+    height: 50px;
+}
+
+.footer_section .side3 .title_position .title {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.footer_section .side3 .content {
+    color: white;
+    font-size: 14px;
+}
+
+.footer_section .side3 .content a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.footer_section .side3 .content a:hover {
+    color: #cbcbff;
+}
+
+.footer_section .side4 .title_position {
+    height: 50px;
+}
+
+.footer_section .side4 .title_position .title {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.footer_section .secondary_footer {
+    border-top: 2px solid #fefeff;
+}
+
+.footer_section .secondary_footer span {
+    color: #fefeff;
+    font-size: 15px;
+}
+
+/*footer section end*/
+
+/*media query start*/
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .product_section h3 {
+        font-size: 60px;
+    }
+
+    .product_section .product_section_side1 .image2 {
+        left: 50px;
+    }
+
+    .skill_section .side1 h3 {
+        font-size: 70px;
+    }
+
+    .skill_section .side1 span {
+        font-size: 37px;
+    }
+
+    .testimonial_section .main_box .testimonial_content .client_name {
+        font-size: 18px;
+    }
+
+    .testimonial_section .main_box .testimonial_content .client_designation {
+        font-size: 13px;
+    }
+
+    .blog_section .blog_box h4 {
+        font-size: 15px;
+    }
+
+    .blog_section .blog_box .blog_btns .btn2 {
+        width: auto;
+    }
+
+    .footer_section .input-group {
+        width: 50% !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    header .navbar1 img {
+        height: 30px;
+    }
+
+    header .navbar1 a {
+        font-size: 30px;
+    }
+
+    header .navbar .collapse .navbar-nav .nav-item .nav-link {
+        font-size: 14px;
+    }
+
+    header .navbar .free_concultancy_btn {
+        font-size: 14px;
+    }
+
+    .aboutus_section .aboutus_side1 .main_title {
+        font-size: 60px;
+    }
+
+    .aboutus_section .aboutus_side1 .sub_title {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .aboutus_section .aboutus_side1 .introduction {
+        font-size: 22px;
+    }
+
+    .aboutus_section .aboutus_side1 .description {
+        font-size: 15px;
+    }
+
+    .aboutus_section .aboutus_side2 .icon_box img {
+        height: 45px;
+    }
+
+    .aboutus_section .aboutus_side2 .icon_box h5 {
+        font-size: 12px;
+    }
+
+    .information_section .main_box .content h4 {
+        font-size: 28px;
+    }
+
+    .product_section h3 {
+        font-size: 60px;
+    }
+
+    .product_section .product_section_side1 .image1 {
+        top: 0;
+    }
+
+    .product_section .product_section_side1 .image2 {
+        top: 125px;
+        left: 40px;
+    }
+
+    .product_section .product_section_side2 .product_title {
+        font-size: 25px;
+    }
+
+    .product_section .product_section_side2 .product_description {
+        font-size: 16px;
+    }
+
+    .product_section .product_section_side2 .products span {
+        font-size: 20px;
+    }
+
+    .product_section .product_section_side2 .products p {
+        font-size: 15px;
+    }
+
+    .company_logo_section .images img {
+        height: 30px;
+    }
+
+    .skill_section .side1 h3 {
+        font-size: 50px;
+    }
+
+    .skill_section .side1 span {
+        font-size: 24px;
+    }
+
+    .skill_section .counter_background .Count .count_number {
+        font-size: 25px;
+    }
+
+    .skill_section .counter_background .counter_title {
+        font-size: 20px;
+    }
+
+    .project_section {
+        padding: 0px;
+    }
+
+    .project_section h2 .project_heading {
+        font-size: 28px;
+        bottom: 11px;
+    }
+
+    .team_section .team_titles span {
+        font-size: 35px;
+        bottom: 8px;
+    }
+
+    .team_section .team_main_box .image_bg {
+        height: 135px;
+        width: 135px;
+    }
+
+    .team_section .team_main_box .image_bg img {
+        height: 100px;
+    }
+
+    .team_section .team_main_box .image_bg img:hover {
+        height: 110px;
+    }
+
+    .team_section .team_main_box .image_bg .team_icons .icon1 {
+        height: 20px;
+        width: 20px;
+        font-size: 10px;
+    }
+
+    .team_section .team_main_box .image_bg .team_icons .icon2 {
+        height: 20px;
+        width: 20px;
+        font-size: 10px;
+    }
+
+    .team_section .team_main_box .image_bg .team_icons .icon3 {
+        height: 20px;
+        width: 20px;
+        font-size: 10px;
+    }
+
+    .testimonial_section {
+        padding: 0;
+    }
+
+    .testimonial_section .main_box .polygon_shadow p {
+        font-size: 12px;
+    }
+
+    .testimonial_section .main_box .testimonial_content {
+        top: 75%;
+        left: 13px;
+    }
+
+    .testimonial_section .main_box .testimonial_content .client_name {
+        font-size: 13px;
+    }
+
+    .testimonial_section .main_box .testimonial_content .client_designation {
+        font-size: 9px;
+    }
+
+    .testimonial_section .testimonial_title {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .blog_section .blog_box .blog_author {
+        font-size: 10px;
+    }
+
+    .blog_section .blog_box h4 {
+        font-size: 10px;
+        line-height: 17px;
+    }
+
+    .blog_section .blog_box .blog_btns .btn1 {
+        width: auto;
+    }
+
+    .blog_section .blog_box .blog_btns .btn2 {
+        width: auto;
+    }
+
+    .footer_section .input-group {
+        width: 50% !important;
+    }
+
+    .footer_section .side1 .title_position img {
+        height: 30px;
+    }
+
+    .footer_section .side1 .title_position .title {
+        font-size: 30px;
+    }
+
+    .footer_section .side1 p {
+        font-size: 12px;
+    }
+
+    .footer_section .side1 .icons a {
+        font-size: 15px;
+    }
+
+    .footer_section .side2 .links a {
+        font-size: 12px;
+    }
+
+    .footer_section .side3 .content {
+        font-size: 12px;
+    }
+
+    .footer_section .side3 .content a {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    header .navbar1 {
+        background-color: white;
+    }
+
+    header .navbar-dark .navbar-brand {
+        color: black;
+    }
+
+    header .navbar .collapse .navbar-nav .nav-item .nav-link {
+        color: black;
+    }
+
+    header .navbar .free_concultancy_btn {
+        border: 2px solid black;
+        color: black;
+    }
+
+    header .carousel .carousel-inner .content_position .service_background a {
+        font-size: 13px;
+    }
+
+    .aboutus_section .aboutus_side1 .main_title {
+        font-size: 50px;
+    }
+
+    .aboutus_section .aboutus_side1 .sub_title {
+        font-size: 25px;
+        line-height: 50px;
+    }
+
+    .aboutus_section .aboutus_side1 .introduction {
+        font-size: 17px;
+    }
+
+    .aboutus_section .aboutus_side1 .description {
+        font-size: 15px;
+    }
+
+    .product_section h3 {
+        font-size: 50px;
+    }
+
+    .product_section .product_section_side1 .image1 {
+        top: 0;
+    }
+
+    .product_section .product_section_side1 .image2 {
+        left: 90px;
+    }
+
+    .product_section .product_section_side2 {
+        margin-top: 560px;
+    }
+
+    .product_section .product_section_side2 .product_title {
+        font-size: 35px;
+    }
+
+    .product_section .product_section_side2 .product_description {
+        font-size: 16px;
+    }
+
+    .product_section .product_section_side2 .products p {
+        font-size: 15px;
+    }
+
+    .product_section .product_section_side2 .products span {
+        font-size: 22px;
+    }
+
+    .company_logo_section .images img {
+        height: 31px;
+    }
+
+    .skill_section .side1 h3 {
+        font-size: 50px;
+    }
+
+    .skill_section .side1 span {
+        font-size: 25px;
+    }
+
+    .skill_section .side1 p {
+        font-size: 16px;
+    }
+
+    .skill_section .counter_background .Count .count_number {
+        font-size: 20px;
+    }
+
+    .skill_section .counter_background .counter_title {
+        font-size: 15px;
+    }
+
+    .project_section h2 {
+        font-size: 50px;
+    }
+
+    .project_section h2 .project_heading {
+        font-size: 21px;
+        bottom: 8px;
+    }
+
+    .project_section .project_main_text {
+        font-size: 14px;
+    }
+
+    .team_section .team_titles h4 {
+        font-size: 50px;
+    }
+
+    .team_section .team_titles span {
+        font-size: 21px;
+        bottom: 6px;
+    }
+
+    .team_section .team_content p {
+        font-size: 15px;
+        width: 90% !important;
+    }
+
+    .testimonial_section {
+        padding: 0;
+    }
+
+    .testimonial_section .testimonial_title {
+        font-size: 28px;
+    }
+
+    .testimonial_section .main_box .testimonial_content {
+        left: 15px;
+    }
+
+    .blog_section .blog_titles h4 {
+        font-size: 50px;
+    }
+
+    .blog_section .blog_titles span {
+        font-size: 25px;
+        bottom: 4px;
+    }
+
+    .blog_section .blog_content p {
+        font-size: 15px;
+        width: 90% !important;
+    }
+
+    .blog_section .blog_box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .blog_section .blog_box .blog_btns .btn1 {
+        font-size: 15px;
+    }
+
+    .blog_section .blog_box .blog_btns .btn2 {
+        font-size: 15px;
+    }
+
+    .footer_section .input-group {
+        width: 70%;
+    }
+
+    .aboutus_section .aboutus_side1 {
+        animation: unset;
+    }
+
+    .aboutus_section .aboutus_side2 {
+        animation: unset;
+    }
+
+    .information_section {
+        animation: unset;
+    }
+
+    .product_section {
+        animation: unset;
+    }
+
+    .company_logo_section {
+        animation: unset;
+    }
+
+    .skill_section .side1 {
+        animation: unset;
+    }
+
+    .skill_section .side2 {
+        animation: unset;
+    }
+
+    .skill_section .counter_background {
+        animation: unset;
+    }
+
+    .project_section {
+        animation: unset;
+    }
+
+    .team_section {
+        animation: unset;
+    }
+
+    .testimonial_section {
+        animation: unset;
+    }
+
+    .blog_section {
+        animation: unset;
+    }
+}
+
+@media (min-width:480px) and (max-width:575px) {
+    header .navbar1 {
+        background-color: white;
+    }
+
+    header .navbar-dark .navbar-brand {
+        color: black;
+    }
+
+    header .navbar .collapse .navbar-nav .nav-item .nav-link {
+        color: black;
+    }
+
+    header .navbar .free_concultancy_btn {
+        border: 2px solid black;
+        color: black;
+    }
+
+    header .carousel .carousel-inner .content_position .carousel-item .first_content .first_text {
+        font-size: 22px;
+    }
+
+    header .carousel .carousel-inner .content_position .carousel-item .first_content .second_text {
+        font-size: 40px;
+    }
+
+    header .carousel .carousel-inner .content_position .carousel-item .first_content .third_text {
+        font-size: 18px;
+    }
+
+    header .carousel .carousel-inner .content_position .service_background a {
+        font-size: 11px;
+    }
+
+    .aboutus_section .aboutus_side1 .main_title {
+        font-size: 50px;
+    }
+
+    .aboutus_section .aboutus_side1 .sub_title {
+        font-size: 25px;
+        line-height: 50px;
+    }
+
+    .aboutus_section .aboutus_side1 .introduction {
+        font-size: 17px;
+    }
+
+    .aboutus_section .aboutus_side1 .description {
+        font-size: 15px;
+    }
+
+    .product_section h3 {
+        font-size: 50px;
+    }
+
+    .product_section .product_section_side1 .image1 {
+        top: 0px;
+    }
+
+    .product_section .product_section_side1 .image2 {
+        top: 115px;
+        left: 30px;
+    }
+
+    .product_section .product_section_side2 {
+        margin-top: 620px;
+    }
+
+    .product_section .product_section_side2 .product_title {
+        font-size: 35px;
+    }
+
+    .product_section .product_section_side2 .product_description {
+        font-size: 16px;
+    }
+
+    .product_section .product_section_side2 .products p {
+        font-size: 15px;
+    }
+
+    .product_section .product_section_side2 .products span {
+        font-size: 22px;
+    }
+
+    .company_logo_section .images img {
+        height: 31px;
+    }
+
+    .skill_section .side1 h3 {
+        font-size: 50px;
+    }
+
+    .skill_section .side1 span {
+        font-size: 25px;
+    }
+
+    .skill_section .side1 p {
+        font-size: 16px;
+    }
+
+    .skill_section .counter_background .Count .count_number {
+        font-size: 18px;
+    }
+
+    .skill_section .counter_background .counter_title {
+        font-size: 13px;
+    }
+
+    .project_section h2 {
+        font-size: 50px;
+    }
+
+    .project_section h2 .project_heading {
+        font-size: 19px;
+        bottom: -12%
+    }
+
+    .project_section .project_main_text {
+        font-size: 14px;
+    }
+
+    .team_section .team_titles h4 {
+        font-size: 50px;
+    }
+
+    .team_section .team_titles span {
+        font-size: 21px;
+        bottom: 9%;
+    }
+
+    .team_section .team_content p {
+        font-size: 15px;
+        width: 90% !important;
+    }
+
+    .testimonial_section {
+        padding: 0;
+    }
+
+    .testimonial_section .testimonial_title {
+        font-size: 28px;
+    }
+
+    .testimonial_section .main_box .testimonial_content {
+        left: 15px;
+    }
+
+    .testimonial_section .main_box .testimonial_content .client_name {
+        font-size: 15px;
+    }
+
+    .testimonial_section .main_box .testimonial_content .client_designation {
+        font-size: 12px;
+    }
+
+    .blog_section .blog_titles h4 {
+        font-size: 50px;
+    }
+
+    .blog_section .blog_titles span {
+        font-size: 25px;
+    }
+
+    .blog_section .blog_content p {
+        font-size: 15px;
+        width: 90% !important;
+    }
+
+    .blog_section .blog_box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .blog_section .blog_box .blog_btns .btn1 {
+        font-size: 15px;
+    }
+
+    .blog_section .blog_box .blog_btns .btn2 {
+        font-size: 15px;
+    }
+
+    .footer_section .input-group {
+        width: 70%;
+    }
+
+    .aboutus_section .aboutus_side1 {
+        animation: unset;
+    }
+
+    .aboutus_section .aboutus_side2 {
+        animation: unset;
+    }
+
+    .information_section {
+        animation: unset;
+    }
+
+    .product_section {
+        animation: unset;
+    }
+
+    .company_logo_section {
+        animation: unset;
+    }
+
+    .skill_section .side1 {
+        animation: unset;
+    }
+
+    .skill_section .side2 {
+        animation: unset;
+    }
+
+    .skill_section .counter_background {
+        animation: unset;
+    }
+
+    .project_section {
+        animation: unset;
+    }
+
+    .team_section {
+        animation: unset;
+    }
+
+    .testimonial_section {
+        animation: unset;
+    }
+
+    .blog_section {
+        animation: unset;
+    }
+}
+
+@media (max-width:479px) {
+    header .navbar1 {
+        background-color: white;
+    }
+
+    header .navbar-dark .navbar-brand {
+        color: black;
+    }
+
+    header .navbar .collapse .navbar-nav .nav-item .nav-link {
+        color: black;
+    }
+
+    header .navbar .free_concultancy_btn {
+        border: 2px solid black;
+        color: black;
+    }
+
+    header .carousel .carousel-indicators {
+        bottom: 15%;
+    }
+
+    header .carousel .carousel-inner .content_position .carousel-item .first_content .first_text {
+        font-size: 18px;
+    }
+
+    header .carousel .carousel-inner .content_position .carousel-item .first_content .second_text {
+        font-size: 30px;
+    }
+
+    header .carousel .carousel-inner .content_position .carousel-item .first_content .third_text {
+        font-size: 15px;
+    }
+
+    header .carousel .carousel-inner .content_position .service_background a {
+        font-size: 13px;
+    }
+
+    .aboutus_section .aboutus_side1 .main_title {
+        font-size: 40px;
+    }
+
+    .aboutus_section .aboutus_side1 .sub_title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .aboutus_section .aboutus_side1 .introduction {
+        font-size: 15px;
+    }
+
+    .aboutus_section .aboutus_side1 .description {
+        font-size: 15px;
+    }
+
+    .information_section .main_box .content h4 {
+        font-size: 22px;
+    }
+
+    .product_section h3 {
+        font-size: 40px;
+    }
+
+    .product_section .product_section_side1 .image1 {
+        top: 0px;
+    }
+
+    .product_section .product_section_side1 .image2 {
+        display: none;
+    }
+
+    .product_section .product_section_side2 .product_title {
+        font-size: 23px;
+    }
+
+    .product_section .product_section_side2 .product_description {
+        font-size: 15px;
+    }
+
+    .product_section .product_section_side2 .products p {
+        font-size: 15px;
+    }
+
+    .product_section .product_section_side2 .products span {
+        font-size: 22px;
+    }
+
+    .company_logo_section .images img {
+        height: 22px;
+    }
+
+    .skill_section .side1 h3 {
+        font-size: 40px;
+    }
+
+    .skill_section .side1 span {
+        font-size: 23px;
+    }
+
+    .skill_section .side1 p {
+        font-size: 15px;
+    }
+
+    .skill_section .counter_background .Count .count_number {
+        font-size: 18px;
+    }
+
+    .skill_section .counter_background .counter_title {
+        font-size: 13px;
+    }
+
+    .project_section h2 {
+        font-size: 33px;
+    }
+
+    .project_section h2 .project_heading {
+        font-size: 12px;
+        bottom: 5px;
+    }
+
+    .project_section .project_main_text {
+        font-size: 15px;
+    }
+
+    .team_section .team_titles h4 {
+        font-size: 40px;
+    }
+
+    .team_section .team_titles span {
+        font-size: 16px;
+        bottom: 9%;
+    }
+
+    .team_section .team_content p {
+        font-size: 15px;
+        width: 90% !important;
+    }
+
+    .testimonial_section {
+        padding: 0;
+    }
+
+    .testimonial_section h2 {
+        font-size: 40px;
+    }
+
+    .testimonial_section .testimonial_title {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .testimonial_section .main_box .testimonial_content {
+        left: 15px;
+    }
+
+    .testimonial_section .main_box .testimonial_content .client_name {
+        font-size: 15px;
+    }
+
+    .testimonial_section .main_box .testimonial_content .client_designation {
+        font-size: 12px;
+    }
+
+    .blog_section .blog_titles h4 {
+        font-size: 35px;
+    }
+
+    .blog_section .blog_titles span {
+        font-size: 20px;
+    }
+
+    .blog_section .blog_content p {
+        font-size: 15px;
+        width: 90% !important;
+    }
+
+    .blog_section .blog_box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .blog_section .blog_box .blog_btns .btn1 {
+        font-size: 15px;
+    }
+
+    .blog_section .blog_box .blog_btns .btn2 {
+        font-size: 15px;
+    }
+
+    .footer_section .input-group {
+        width: 90%;
+    }
+
+    .aboutus_section .aboutus_side1 {
+        animation: unset;
+    }
+
+    .aboutus_section .aboutus_side2 {
+        animation: unset;
+    }
+
+    .information_section {
+        animation: unset;
+    }
+
+    .product_section {
+        animation: unset;
+    }
+
+    .company_logo_section {
+        animation: unset;
+    }
+
+    .skill_section .side1 {
+        animation: unset;
+    }
+
+    .skill_section .side2 {
+        animation: unset;
+    }
+
+    .skill_section .counter_background {
+        animation: unset;
+    }
+
+    .project_section {
+        animation: unset;
+    }
+
+    .team_section {
+        animation: unset;
+    }
+
+    .testimonial_section {
+        animation: unset;
+    }
+
+    .blog_section {
+        animation: unset;
+    }
+}
+
+/*media query end*/
